@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rotate-left {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(360deg);
+  }
+  to {
+      transform: rotate(0deg);
+  }
+}
+
+.rotate-right {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
