@@ -8,8 +8,7 @@ window.onload = () => {
     .then((response) => response.json())
     .then((json) => {
       message = json[String(Math.floor(Math.random() * NUM_QUOTES))];
-
-      console.log(message);
+      //message = json["29"];
 
       quote_element.innerHTML = message;
     });
