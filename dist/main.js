@@ -1,4 +1,4 @@
-const NUM_QUOTES = 30;
+const NUM_QUOTES = 29;
 let message_number = Math.floor(Math.random() * NUM_QUOTES);
 let slideIndex = 0;
 
