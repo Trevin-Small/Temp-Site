@@ -38,8 +38,6 @@ function showSlides() {
 
 window.onload = () => {
 
-  showSlides();
-
   fetch('https://abby.trevinsmall.com/dist/quotes.json')
     .then((response) => response.json())
     .then((json) => {
@@ -53,4 +51,6 @@ window.onload = () => {
         randomMessage(json, true);
       });
     });
+
+  showSlides();
 }
